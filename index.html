@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		img{
+			width: 300px;
+			position: absolute;
+		
+		}
+		
+	</style>
+
+</head>
+<body>
+	<div class="bg1" style="height: 700px; background: url(rev.gif)  ; background-size: 100% 100%;display: none; "></div>
+	<div class="bg" style="height: 700px; background: url(background.png)  ; background-size: 100% 100%; ">
+			<center><h1 class="text-white font-weight-bold">Русская рулетка</h1></center>
+		<center><p class="text-white font-weight-bold">1 Уровень. 3-убивает)</p></center>
+
+		<img class="gun" src="revolver.png" style="margin-top: 200px; margin-left: 800px">
+		<img class="emodzi" src="emodzi1.png" style="margin-top: 200px; margin-left: 400px; width: 100px;">
+
+		<center><h1 class="chislo">0</h1></center>
+
+		
+	</div>
+
+	<div class="bg4" style="height: 700px; background: url(rev.gif)  ; background-size: 100% 100%;display: none; "></div>
+	<div class="bg3" style="height: 700px; background: url(background.png)  ; background-size: 100% 100%;display: none; ">
+			<center><h1 class="text-white font-weight-bold">Русская рулетка</h1></center>
+		<center><p class="text-white font-weight-bold">2 Уровень. 4-убивает) </p></center>
+
+		<img class="gun1" src="revolver.png" style="margin-top: 200px; margin-left: 800px">
+		<img class="emodzi1" src="emodzi1.png" style="margin-top: 200px; margin-left: 400px; width: 100px;">
+
+		<center><h1 class="chislo">0</h1></center>
+
+		
+	</div>
+
+	<div class="bg6" style="height: 700px; background: url(rev.gif)  ; background-size: 100% 100%;display: none; "></div>
+	<div class="bg5" style="height: 700px; background: url(background.png)  ; background-size: 100% 100%;display: none; ">
+			<center><h1 class="text-white font-weight-bold">Русская рулетка</h1></center>
+		<center><p class="text-white font-weight-bold">3 Уровень. 0-убивает) </p></center>
+
+		<img class="gun2" src="revolver.png" style="margin-top: 200px; margin-left: 800px">
+		<img class="emodzi2" src="emodzi1.png" style="margin-top: 200px; margin-left: 400px; width: 100px;">
+
+		<center><h1 class="chislo">0</h1></center>
+
+		
+	</div>
+
+	<div class="bg8" style="height: 700px; background: url(rev.gif)  ; background-size: 100% 100%;display: none; "></div>
+	<div class="bg7" style="height: 700px; background: url(background.png)  ; background-size: 100% 100%;display: none; ">
+			<center><h1 class="text-white font-weight-bold">Русская рулетка</h1></center>
+		<center><p class="text-white font-weight-bold">4 Уровень. 2-убивает) </p></center>
+
+		<img class="gun3" src="revolver.png" style="margin-top: 200px; margin-left: 800px">
+		<img class="emodzi3" src="emodzi1.png" style="margin-top: 200px; margin-left: 400px; width: 100px;">
+
+		<center><h1 class="chislo">0</h1></center>
+
+		
+	</div>
+
+	<div class="bg10" style="height: 700px; background: url(rev.gif)  ; background-size: 100% 100%;display: none; "></div>
+	<div class="bg9" style="height: 700px; background: url(background.png)  ; background-size: 100% 100%;display: none; ">
+			<center><h1 class="text-white font-weight-bold">Русская рулетка</h1></center>
+		<center><p class="text-white font-weight-bold">5 Уровень. 1-убивает) </p></center>
+
+		<img class="gun4" src="revolver.png" style="margin-top: 200px; margin-left: 800px">
+		<img class="emodzi4" src="emodzi1.png" style="margin-top: 200px; margin-left: 400px; width: 100px;">
+
+		<center><h1 class="chislo">0</h1></center>
+
+		
+	</div>
+
+	<div class="bg11" style="height: 700px; background: url(win.gif)  ; background-size: 100% 100%;display: none; "></div>
+
+
+
+<script type="text/javascript">
+	let bg = document.querySelector(".bg")
+	let bg1 = document.querySelector(".bg1")
+	let gun = document.querySelector(".gun")
+	let emodzi = document.querySelector(".emodzi")
+	let chislo = document.querySelectorAll(".chislo")
+	let rand = Math.round(Math.random()*4)
+	gun.onclick = function(){
+		chislo[0].innerHTML = rand
+		if(rand == 3){
+			bg.style.display = "none" 
+			bg1.style.display = "block" 
+		}
+		else{
+			let proverka = function() {
+			bg.style.display = "none" 
+			bg3.style.display = "block" 
+			alert("один есть!")
+					}
+		setTimeout(proverka,1000)
+		}
+	}
+	let bg3 = document.querySelector(".bg3")
+	let bg4 = document.querySelector(".bg4")
+	let gun1 = document.querySelector(".gun1")
+	let emodzi1 = document.querySelector(".emodzi1")
+	let rand1 = Math.round(Math.random()*4)
+	gun1.onclick = function(){
+		chislo[1].innerHTML = rand1
+		if(rand1 == 4){
+			bg3.style.display = "none" 
+			bg4.style.display = "block" 
+		}
+		else{
+			let proverka = function() {
+			bg3.style.display = "none" 
+			bg5.style.display = "block" 
+			alert("Второй готов!")
+			}
+		setTimeout(proverka,1000)
+		}
+	}
+	let bg5 = document.querySelector(".bg5")
+	let bg6 = document.querySelector(".bg6")
+	let gun2 = document.querySelector(".gun2")
+	let emodzi2 = document.querySelector(".emodzi2")
+	let rand2 = Math.round(Math.random()*4)
+	gun2.onclick = function(){
+		chislo[2].innerHTML = rand2
+		if(rand2 == 0){
+			bg5.style.display = "none" 
+			bg6.style.display = "block" 
+		}
+		else{
+			let proverka = function() {
+			bg5.style.display = "none" 
+			bg7.style.display = "block" 
+			alert("Как ты это делаешь?!")
+			}
+		setTimeout(proverka,1000)
+		}
+	}
+	let bg7 = document.querySelector(".bg7")
+	let bg8 = document.querySelector(".bg8")
+	let gun3 = document.querySelector(".gun3")
+	let emodzi3 = document.querySelector(".emodzi3")
+	let rand3 = Math.round(Math.random()*4)
+	gun3.onclick = function(){
+		chislo[3].innerHTML = rand3
+		if(rand3 == 2){
+			bg7.style.display = "none" 
+			bg8.style.display = "block" 
+		}
+		else{
+			let proverka = function() {
+			bg7.style.display = "none" 
+			bg9.style.display = "block" 
+			alert("Он еще жив?!")
+			}
+		setTimeout(proverka,1000)
+		}
+	}
+	let bg9 = document.querySelector(".bg9")
+	let bg10 = document.querySelector(".bg10")
+	let gun4 = document.querySelector(".gun4")
+	let emodzi4 = document.querySelector(".emodzi4")
+	let rand4 = Math.round(Math.random()*4)
+	gun4.onclick = function(){
+		chislo[4].innerHTML = rand4
+		if(rand4 == 1){
+			bg9.style.display = "none" 
+			bg10.style.display = "block" 
+		}
+		else{
+			let proverka = function() {
+			bg9.style.display = "none" 
+			bg11.style.display = "block" 
+			alert("Матрица!")
+			}
+		setTimeout(proverka,1000)
+		}
+	}
+
+	let bg11 = document.querySelector(".bg11")
+
+</script>
+</body>
+</html>
